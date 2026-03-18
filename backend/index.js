@@ -22,7 +22,7 @@ connectCloudinary()
 app.use(express.json());
 app.use(
     cors({
-      origin: "https://final-project-mern-stack.vercel.app",
+      origin: "https://final-project-mern-stack-frontend.vercel.app",
       credentials: true,
     })
   );
