@@ -74,7 +74,7 @@ const AppContextProvider = ({ children }) => {
         toast.error(data.message);
        }
     } catch (error) {
-       console.log(error)
+       console.log(error);
     }
   }
 
