@@ -130,8 +130,13 @@ const AppContextProvider = ({ children }) => {
   }, []);
   
   useEffect(()=>{
-    fetchcarddata();
-  },[])
+    if(user){
+      fetchcarddata();
+    }else{
+      setCart({items:[]});
+    }
+    
+  },[user])
 
   const value = {
     navigate,
