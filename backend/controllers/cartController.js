@@ -65,6 +65,6 @@ export const removefromcart=async(req,res)=>{
         res.status(200).json({ message: "Item removed from cart", success: true });
       } catch (error) {
         console.log(error);
-        return res.json({ message: "Internal server error", success: false });
+        return res.json({ message: "LOGIN OR REGISTER", success: false });
       }
 }
